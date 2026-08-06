@@ -6,7 +6,7 @@
     <meta name="descripcion" content="Sitio de comprobación sobre acordes (escuela de música)">
     <meta name="viewport" content="Estructura semática,menú de navegación, comentarios">
     <meta name="author" content="Naomi Cantillo">
-    <link href="recursos/Favicon.png">
+    <link rel="icon" href="recursos/Favicon.png" type="imagen/png">
     <title>Contacto | Acordes</title>
 </head>
 <header>
@@ -22,10 +22,27 @@
     </header>
 
 <body>
-    <form label>
+    <label for="action">
+        <fieldset>
+        <h2>Contacto</h2>
+        <label for="name">Nombre</label><br>
+        <input type="name" required><br><br>
 
-
-    </form>
+        <label for="tel">Número de teléfono</label><br>
+        <input type="tel" id="tel" min="8" max="8" pattern="64783987" required><br><br>
+        
+        <label for name="date">Edad</label><br>
+        <input type="date" id="date" min="18" max="80" required><br><br>
+       
+        <label for name="email">Correo</label><br>
+        <input type="email" id="email" required><br><br>
+        
+        <label for name="text">Comentario</label><br>
+        <input type="text" id="text" placeholder><br><br>
+        
+        <button type="submit">
+        </fieldset>
+    </label>
 <body>
     <aside>
 
