@@ -1,3 +1,5 @@
+
+/* RESET */
 *{
     margin: 0;
     padding: 0;
@@ -8,11 +10,263 @@ html{
     font-size: 100%;
 }
 
+
+/* CUERPO DE PÀGINA  */
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    
+}
+
+
+/* ENCABEZADOS */
+h1{
+color: white;
+font-family: Arial,Helvetica,sans-serif;
+width: 200;
+letter-spacing: 1.6;
+text-align: center;
+}
+
+h2,h3{
+color: black;
+font-family: Arial, Helvetica, sans-serif;
 
 }
 
-h1,h2,h3{
+/* PÀRRAFOS*/
+p{
+    line-height: 1.6;
+    letter-spacing: 1.6;
 
 }
+
+
+header{
+    background-color: rgb(18, 28, 164);
+    color: white;
+}
+
+
+header nav a{
+color: white
+
+}
+
+header nav a:hover{
+color: rgb(144, 187, 222);
+}
+
+
+.marca{
+
+
+}
+
+.lema{
+text-align: center;
+}
+
+.menu-principal{
+    text-align: center;
+    
+
+}
+
+.enlace-activo{
+
+}
+
+#contenido{
+
+}
+
+#portada{
+
+   
+   
+    background-color: aqua;
+    margin: 4rem;
+   padding: 4rem;
+   border-radius: 1rem;
+    margin: 2rem;
+    width: 0 auto;
+    height: 16rem;
+}
+
+.hero{
+
+}
+
+.hero-texto{
+}
+
+.boton{
+display: block;
+color: white;
+ background-color: rgb(18, 28, 164);
+transform: scale(1.1);
+margin: 1rem;
+padding: 1.6px;
+width: 10%;
+text-align: center;
+height: 30px;
+box-shadow: 0 0 14 rgba(0, 0, 0, 0.34);
+border-radius: 10px;
+}
+
+
+
+.boton:hover{
+    color: rgb(144, 187, 222);
+    transform: scale(1.2);
+}
+
+#servicios{
+    display: grid;
+     margin: 2rem;
+    width: 0 auto;
+    height: 16rem;
+    grid-area: 1rem;
+
+}
+
+.rejilla-servicios{
+    display: block;
+    background-color: bisque;
+   
+}
+
+.tarjeta{
+    display: block;
+    text-align: center;
+}
+
+.tarjeta-pie{
+
+}
+
+#historia{
+display: grid;
+     margin: 2rem;
+    width: 0 auto;
+    height: 16rem;
+    grid-area: 1rem;
+}
+
+.cita{
+    display: block;
+    background-color: blanchedalmond;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 4rem;
+    width: 50%;
+    height: 16px;
+}
+
+.cita-autoria{
+display: block;
+}
+
+#aviso{
+    display: block;
+    border-radius: 1rem;
+    background-color: bisque;
+    margin: 1rem;
+    padding: 4rem;
+    width: 70%;
+    height: 10px;
+    
+
+}
+
+.panel-aviso{
+text-align: left;
+}
+
+
+
+.indice{
+
+}
+
+#existencias{
+
+}
+
+.tabla-catalogo{
+
+}
+
+.categorias{
+
+}
+
+.lista-categorias{
+
+}
+
+.glosario{
+
+}
+
+#pedido{
+
+}
+
+.formulario-pedido{
+
+}
+
+.grupo-campos{
+
+}
+
+.campo{
+
+}
+
+.grupo-opciones{
+
+}
+
+.opcion{
+
+}
+
+.grupo-botones{
+
+}
+
+.volver{
+
+}
+
+#pie{
+    display: block;
+    background-color:  rgb(18, 28, 164);
+    color: white;
+    height: 12rem;
+    justify-content: space-between;
+}
+
+.pie-contenido{
+
+}
+
+.datos-contacto{
+
+}
+
+.creditos{
+
+}
+
+
+
+
+
 
