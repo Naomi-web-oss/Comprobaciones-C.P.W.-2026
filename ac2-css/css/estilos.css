@@ -315,5 +315,12 @@ img{
 
 #aviso p{
     margin-bottom: 0;
-    
+
+}
+
+#pie{
+    background-color: var(--color-marca);
+    color: var(--color-blanco);
+    padding: var(--esp-xl) var(--esp--md) var(--esp--md);
+    margin-top: var(--esp-xl);
 }
