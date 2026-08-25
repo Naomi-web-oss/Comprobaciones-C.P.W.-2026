@@ -1,10 +1,37 @@
 
+
+/* PALETA DE COLORES/MÌNIMO 3 COLORES */
+:root{
+--color-principal: #rgb(18, 28, 164);
+--color-secundario: aqua;
+--color-hover:rgb(144, 187, 222);
+--color-tipografìa:black;
+--color-tipografìa-2: white;
+--color-bloque:blanchedalmond;
+--color-bloque-2:bisque;
+
+/* TIPOGRAFIA */
+
+--fuente-titulo:Georgia,Hervetica,san serif;
+--fuente-texto:'Segoe ul',Arial, sans-serif;
+
+
+/* ESPACIADO CONVERSIÒN 1 REM = 10 PÌXELS*/
+--esp-sm:0.8rem;/*8px*/
+--esp-csm:1.6rem;/*16px*/
+--esp--md:2.4px;/*24px*/
+--esp-lg:4.0rem;/*40px*/
+--esp-al:8.0rem;/*80px*/
+}
+
 /* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ETIQUETAS */
 
 html{
     font-size: 100%;
@@ -18,6 +45,7 @@ body{
     background-color:white;
     color: black;
     cursor: pointer;
+    margin: 0 auto;
     
 }
 
@@ -31,6 +59,7 @@ letter-spacing: 1.6px;
 text-align: center;
 }
 
+
 h2,h3{
 color: black;
 font-family: Arial, Helvetica, sans-serif;
@@ -41,6 +70,9 @@ font-family: Arial, Helvetica, sans-serif;
 p{
     line-height: 1.6;
     letter-spacing: 1.6px;
+}
+
+p::first-letter{
 
 }
 
@@ -60,6 +92,19 @@ header nav a:hover{
 color: rgb(144, 187, 222);
 }
 
+header nav a:active{
+    background-color: black;
+}
+
+header nav a:focus{
+    background-color: white;
+}
+
+/* IDs */
+
+
+
+/* CLASES */
 
 .marca{
 
@@ -149,7 +194,8 @@ border-radius: 10px;
 
 #historia{
     display: grid;
-     margin: 2rem;
+     margin: 1rem;
+     padding: 3rem;
     width: auto;
     height: 16rem;
     grid-area: 1rem;
@@ -159,7 +205,7 @@ border-radius: 10px;
     display: block;
     background-color: blanchedalmond;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     padding: 4rem;
     width: 50%;
     height: 16px;
@@ -173,7 +219,7 @@ display: block;
     display: block;
     border-radius: 1rem;
     background-color: bisque;
-    margin: 1rem;
+    margin: 9rem;
     padding: 4rem;
     width: 70%;
     height: 10px;
