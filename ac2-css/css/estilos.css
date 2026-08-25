@@ -59,9 +59,8 @@ body{
   
 }
 
+
 /* SELECTORES DE ETIQUETA ESPECÌFICO */
-
-
 
 /* ENCABEZADOS */
 h1,h2,h3{
@@ -73,20 +72,20 @@ letter-spacing: 1.6px;
 text-align: center;
 }
 
-h1{  font-size: 0.4rem;}
-h2{ font-size: 0.4rem;}
-h3{ font-size: 0.4rem;}
+h1{  font-size: 3rem;}
+h2{ font-size: 2rem;}
+h3{ font-size: 2rem;}
 
 
 /* PÀRRAFOS*/
 p{
    margin-bottom: var(--esp--md);
    color: var(--color-acento);
-   text-decoration: ;
+   text-decoration: none;
 }
 
 img{
-    max-width: ;
+    max-width: auto;
     height: auto;
     display: block;
 }
@@ -99,247 +98,37 @@ img{
     padding: var(--esp-lg) var(--esp--md);
 }
 
-
-
-p::first-letter{
-
+.servicios
+.historia
+.existencias
+.categorias
+.pedidos{
+    margin: var(-esp-xl);
 }
 
-
-header{
-    background-color: rgb(18, 28, 164);
-    color: white;
-}
-
-
-header nav a{
-color: white
-
-}
-
-header nav a:hover{
-color: rgb(144, 187, 222);
-}
-
-header nav a:active{
-    background-color: black;
-}
-
-header nav a:focus{
-    background-color: white;
-}
-
-/* IDs */
-
-
-
-/* CLASES */
-
-.marca{
-
-
-}
-
-.lema{
-text-align: center;
-}
-
-.menu-principal{
-    text-align: center;
-    
-
-}
-
-.enlace-activo{
-
-}
-
-#contenido{
-
-}
-
-#portada{
-   
-    background-color: aqua;
-    margin: 4rem;
-   padding: 4rem;
-   border-radius: 1rem;
-    margin: 2rem;
-    width: auto;
-    height: 16rem;
-}
-
-.hero{
-
-}
-
-.hero-texto{
-}
-
-.boton{
-display: block;
-color: white;
- background-color: rgb(18, 28, 164);
-transform: scale(1.1);
-margin: 1rem;
-padding: 1.6px;
-width: 10%;
-text-align: center;
-height: 30px;
-box-shadow: 0 0 14 rgba(0, 0, 0, 0.34);
-border-radius: 10px;
-}
-
-
-
-.boton:hover{
-    color: rgb(144, 187, 222);
-    transform: scale(1.2);
-}
-
-#servicios{
-    display: grid;
-     margin: 2rem;
-    width:  auto;
-    height: 16rem;
-    grid-area: auto;
-
-}
-
-.rejilla-servicios{
-    display: block;
-    background-color: bisque;
-   
-}
-
-.tarjeta{
-    display: block;
-    text-align: center;
-}
-
-.tarjeta-pie{
-
-}
-
-#historia{
-    display: grid;
-     margin: 1rem;
-     padding: 3rem;
-    width: auto;
-    height: 16rem;
-    grid-area: 1rem;
-}
-
-.cita{
-    display: block;
-    background-color: blanchedalmond;
-    border-radius: 1rem;
-    margin: 2rem;
-    padding: 4rem;
-    width: 50%;
-    height: 16px;
-}
-
-.cita-autoria{
-display: block;
-}
-
-#aviso{
-    display: block;
-    border-radius: 1rem;
-    background-color: bisque;
-    margin: 9rem;
-    padding: 4rem;
-    width: 70%;
-    height: 10px;
-    
-
-}
-
-.panel-aviso{
-text-align: left;
-}
-
-
-
-.indice{
-
-}
-
-#existencias{
-
-}
-
-.tabla-catalogo{
-
-}
-
-.categorias{
-
-}
-
-.lista-categorias{
-
-}
-
-.glosario{
-
-}
-
-#pedido{
-
-}
-
-.formulario-pedido{
-
-}
-
-.grupo-campos{
-
-}
-
-.campo{
-
-}
-
-.grupo-opciones{
-
-}
-
-.opcion{
-
-}
-
-.grupo-botones{
-
-}
-
-.volver{
-
-}
-
-#pie{
-    display: block;
-    background-color:  rgb(18, 28, 164);
-    color: white;
-    height: 12rem;
-    justify-content: space-between;
-}
-
-.pie-contenido{
-
-}
-
-.datos-contacto{
-
-}
-
-.creditos{
-
-}
-
-
-
-
-
+.servicios > h2
+.historia > h2
+.existencias > h2
+.categorias > h2
+.pedidos > h2{
+
+ margin-bottom: var(--esp--md);
+ padding-bottom:var(--esp--md) ;
+ border: 0.2rem solid var(--color-linea);
+ }
+
+ #cabecera{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--esp-sm);
+    max-width: ;
+    margin: ;
+    padding:var(--esp-sm)  var(--esp--md);
+    background-color: var(--color-blanco);
+    border: 0.1rem solid var(--color-linea);
+    position: sticky;
+    top: 0;
+    z-index;
+ }
 
