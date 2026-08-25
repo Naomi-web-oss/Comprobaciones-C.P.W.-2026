@@ -2,13 +2,15 @@
 
 /* PALETA DE COLORES/MÌNIMO 3 COLORES */
 :root{
---color-principal: #rgb(18, 28, 164);
---color-secundario: aqua;
---color-hover:rgb(144, 187, 222);
---color-tipografìa:black;
---color-tipografìa-2: white;
---color-bloque:blanchedalmond;
---color-bloque-2:bisque;
+-color-tinta:#1a1a1a;/*texto principal */
+     --color-scale:#cbcbcb;/*Texto secundario*/
+     --color-marca:#2c3e50;/*El color del estudio*/
+     --color-acento:#c87941;/*El color de los botones*/
+     --color-acento-osc:#a45f2e; /*Terracota oscuro*/
+     --color-fondo: #fafaf8;/*Color de fondo*/
+     --color-fondo-alt:#f0cee9; /*Para alterar fondo secciones */
+     --color-linea: #dddad3; /*Bordes y separadores*/
+     --color-blanco:#ffffff; /*blanco y puro*/
 
 /* TIPOGRAFIA */
 
@@ -53,35 +55,51 @@ body{
     font-size: 1.6rem;
     font-family: var(--fuente-texto);
     line-height: 1.6;
-    background-color:var(--color-tipografìa);
-    color: black;
-    cursor: pointer;
-    margin: 0 auto;
-    
+    background-color:var(--color-blanco)
+  
 }
+
+/* SELECTORES DE ETIQUETA ESPECÌFICO */
+
 
 
 /* ENCABEZADOS */
-h1{
-color: white;
-font-family: Arial,Helvetica,sans-serif;
+h1,h2,h3{
+font-family: var(--fuente-titulo);
+line-height: 1.2;
+color: var(--color-marca);
 width: 100%;
 letter-spacing: 1.6px;
 text-align: center;
 }
 
+h1{  font-size: 0.4rem;}
+h2{ font-size: 0.4rem;}
+h3{ font-size: 0.4rem;}
 
-h2,h3{
-color: black;
-font-family: Arial, Helvetica, sans-serif;
-
-}
 
 /* PÀRRAFOS*/
 p{
-    line-height: 1.6;
-    letter-spacing: 1.6px;
+   margin-bottom: var(--esp--md);
+   color: var(--color-acento);
+   text-decoration: ;
 }
+
+img{
+    max-width: ;
+    height: auto;
+    display: block;
+}
+
+/* CONTENEDORES */
+#contenido{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--esp-lg) var(--esp--md);
+}
+
+
 
 p::first-letter{
 
