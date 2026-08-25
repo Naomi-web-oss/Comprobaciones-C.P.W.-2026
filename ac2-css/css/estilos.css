@@ -2,38 +2,42 @@
 
 /* PALETA DE COLORES/MÌNIMO 3 COLORES */
 :root{
--color-tinta:#1a1a1a;/*texto principal */
-     --color-scale:#cbcbcb;/*Texto secundario*/
-     --color-marca:#2c3e50;/*El color del estudio*/
-     --color-acento:#c87941;/*El color de los botones*/
+    /* Paleta de colores */
+     --color-tinta:#1a1a1a;/*texto principal */
+     --color-suave:#6b6b6b;/*Texto secundario,pies de foto*/
+     --color-marca:#2c3e50;/*El azul del estudio*/
+     --color-acento:#c87941;/*Terracota de los botones*/
      --color-acento-osc:#a45f2e; /*Terracota oscuro*/
-     --color-fondo: #fafaf8;/*Color de fondo*/
-     --color-fondo-alt:#f0cee9; /*Para alterar fondo secciones */
+     --color-fondo: #fafaf8;/*Blanco roto, no blanco puro*/
+     --color-fondo-alt:#f0eee9; /*Para alterar fondo secciones */
      --color-linea: #dddad3; /*Bordes y separadores*/
      --color-blanco:#ffffff; /*blanco y puro*/
 
+
+
 /* TIPOGRAFIA */
 
---fuente-titulo:Georgia,Helvetica,sans-serif;
---fuente-texto:'Segoe ul',Arial, sans-serif;
+--fuente-titulo:Georgia,'Times New Roman',serif;
+--fuente-texto:'Segoe uI',Arial, sans-serif;
+--fuente-titulo:Georgia, 'Times New Roman', serif;
 
 
 /* ESPACIADO CONVERSIÒN 1 REM = 10 PÌXELS*/
---esp-sm:0.8rem;/*8px*/
---esp-csm:1.6rem;/*16px*/
+--esp-xs:0.8rem;/*8px*/
+--esp-sm:1.6rem;/*16px*/
 --esp--md:2.4px;/*24px*/
---esp-lg:4.0rem;/*40px*/
---esp-al:8.0rem;/*80px*/
+--esp-lg:4rem;/*40px*/
+--esp-xl:8rem;/*80px*/
 
 /* OTROS ELEMENTOS */
 --radio:0.6rem;/*6px*/
---sombra-1:0.2rem 0.6rem rgba(0,0,0,.06);/*Apenas separado*/
---sombra-2:0.2rem 0.6rem rgba(0,0,0,.10);/*Tarjeta*/
---sombra-3:8rem 2.0rem rgba(0,0,0,.16);/*Elementos elevados*/
+--sombra-1:0 0.2rem 0, 0.6rem rgba(0,0,0, 06);/*Apenas separado*/
+--sombra-2:0 0.4rem 0, 1.2rem rgba(0,0,0, 10);/*Tarjeta*/
+--sombra-3:0 0.2rem 0, 0.6rem rgba(0,0,0,.16);/*Elementos elevados*/
 --transicion:0.25 ease;
---ancho-max:120rem/*1200px*/
-
+--ancho-max: 120rem;/*1200px*/
 }
+
 
 
 /* RESET */
@@ -132,3 +136,51 @@ img{
     z-index;
  }
 
+ .marca h1{
+    font-size: 2.6rem;
+    margin-bottom: 0;
+ }
+
+ .lema{
+    font-size: 1.4rem;
+    color: var(--color-suave);
+    margin-bottom: 0;
+    font-style: italic;
+ }
+
+ /* MENU PRINCIPAL */
+.menu-principal ul{
+    display:flex;
+    gap: var(--esp-sm);
+    list-style: none;
+}
+
+ .menu-principal{
+    display: inline-block;
+    padding: var(--esp-sx) var(--esp--md);
+    color: var(--color-suave);
+    border: ;
+    font-weight: ;
+    border-radius: var(--radio);
+    transition: var(--transicion) color var(--transicion);
+ }
+
+ /* PSEUDO-CLASES */
+
+ .menu-principal a:hover{
+    background-color: var(--color-papel-alt);
+    color: var(--color-marca);
+ }
+
+ .menu-principal a:focus{
+    outline: 0.2rem solid color var(--color-acento);
+    outline-offset: 0.2rem;
+
+ }
+
+ .menu-principal .enlace-activo{
+    color: var(--color-acento);
+    background-color: var(--color-papel-alt);
+ }
+
+ 
