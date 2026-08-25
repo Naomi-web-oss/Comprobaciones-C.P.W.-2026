@@ -235,6 +235,7 @@ img{
     color: var(--color-suave);
     flex-grow: ;
  }
+ 
 .tarjeta-pie{
     margin-bottom: 0;
     padding-top: var(--esp-xs);
@@ -249,3 +250,19 @@ img{
     transform: translateY(0.5rem);
     box-shadow: var(--sombra-3);
 }
+
+#historia p{
+    max-width: 70ch;
+}
+
+.cita{
+    max-width: 68rem;
+    margin: var(--esp--md), 0;
+    padding: var(--esp--md) var(--esp-lg);
+    background-color: white;
+    border-left: 0.5rem solid var(--color-acento);
+    border-radius: var(--radio), 0;
+    box-shadow: var(--sombra-1);
+    position: relative;
+}
+
