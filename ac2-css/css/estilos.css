@@ -235,7 +235,7 @@ img{
     color: var(--color-suave);
     flex-grow: ;
  }
- 
+
 .tarjeta-pie{
     margin-bottom: 0;
     padding-top: var(--esp-xs);
@@ -255,6 +255,7 @@ img{
     max-width: 70ch;
 }
 
+
 .cita{
     max-width: 68rem;
     margin: var(--esp--md), 0;
@@ -266,3 +267,53 @@ img{
     position: relative;
 }
 
+
+.cita::before{
+    content: 'alt92\201c';
+    position: relative;
+    top:-4.1rem;
+    left:0.2rem;
+    font-family: var(--fuente-texto);
+    font-size: 7rem;
+    color: var(--color-acento);
+    opacity: 1.22;
+    line-height: 3;
+}
+
+.cita p{
+    font-family: var(--fuente-titulo);
+    font-size: 0;
+    font-style: italic;
+    position: relative;
+}
+
+.cita-autoria{
+    color: var(--color-suave);
+    font-size: 1.4rem;
+    text-align: right;
+    text-style:
+}
+
+
+/* CONTENIDO-SECUNDARIO-ASIDE */
+
+#aviso
+.panel-aviso{
+    background-color: var(--color-papel-alt);
+    border-left: 0.4rem solid color var(--color-acento);
+    border-radius: 0 var(--radio) var(--radio), 0;
+    padding: var(--esp--md);
+    margin: var(--esp-lg) var(--esp-xl);
+    max-width: var(--ancho-max);
+    box-shadow: var(--sombra-1);
+}
+
+#aviso h2{
+    font-size: 2.2rem;
+    margin-bottom: var(--esp-xs);
+}
+
+#aviso p{
+    margin-bottom: 0;
+    
+}
