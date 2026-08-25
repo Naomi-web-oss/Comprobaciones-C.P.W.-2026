@@ -361,7 +361,7 @@ img{
     font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color var(--transicion) transform var(--transicion);
+    transition: border-color var(--transicion) transform var(--transicion);
 }
 
 .boton-principal{
@@ -395,6 +395,7 @@ color: var(--color-linea);
     text-align: center;
     margin-top: var(--esp-lg);
 }
+
 .volver a{
     font-size: 1.4rem;
     color: var(--color-suave);
