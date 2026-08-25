@@ -217,7 +217,35 @@ img{
 
  .tarjeta{
     flex: 1 1 28rem;
+    background-color: var(--color-blanco);
+    padding: var(--esp--md);
+    border: 0.1rem solid color var(--color-linea);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-2);
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transicion) box-shadow var(--transicion);
  }
 
+ .tarjeta h3{
+    margin-bottom: var(--esp-xs);
+ }
 
- 
+ .tarjata p{
+    color: var(--color-suave);
+    flex-grow: ;
+ }
+.tarjeta-pie{
+    margin-bottom: 0;
+    padding-top: var(--esp-xs);
+    border-top: 0.1rem solid color var(--color-linea);
+    font-weight: 700;
+    color: var(--color-marca);
+    font-size: 1.2rem;
+}
+
+
+.tarjeta:hover{
+    transform: translateY(0.5rem);
+    box-shadow: var(--sombra-3);
+}
