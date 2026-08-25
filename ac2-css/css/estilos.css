@@ -133,7 +133,7 @@ img{
     border: 0.1rem solid var(--color-linea);
     position: sticky;
     top: 0;
-    z-index;
+    z-index
  }
 
  .marca h1{
@@ -208,5 +208,16 @@ img{
     margin-bottom: var(--esp-xs);
     opacity: 0.94;
  }
+
+ .rejilla-servicios{
+    display: flex;
+    gap:var(--esp--md);
+    flex-wrap: wrap;
+ }
+
+ .tarjeta{
+    flex: 1 1 28rem;
+ }
+
 
  
