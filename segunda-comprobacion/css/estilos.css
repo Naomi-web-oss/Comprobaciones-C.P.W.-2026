@@ -1,0 +1,327 @@
+:root{
+
+    /*Colores*/
+    --marca:#1F4E79;
+    --acento:#C55A11;
+    --tinta:#333333;
+    --suave:#6B7280;
+    --fondo:#FAFAF8;
+    --linea:#DDDDDD;
+
+    /*Espaciado*/
+
+    --esp-sm:1.6rem;
+    --esp-md:2.4rem;
+    --esp-lg:4rem;
+
+    /*Otros elementos*/
+
+    --radio:0.6rem;
+    --sombra:0.4rem 1.2rem rgba(0,0,0,.1);
+    --ancho-max:120rem;
+
+}
+
+/*Reset: configuraciòn de màrgenes y relleno de la pàgina*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*Cuerpo de pàgina:contenido de la pàgina.*/
+body{
+    font-size: 1.6rem;
+    font-family: 'segoe UI, Arial, sans-serif';
+    line-height: 1.6;
+    color: var(--tinta);
+    background-color: var(--fondo);
+}
+
+/*Encabezados:tìtulos*/
+
+h1,h2,h3{
+    font-family: 'segoe UI, Arial, sans-serif';
+    line-height: 1.2;
+    color: var(--fondo);
+}
+
+h1{font-size: 4rem;}
+h2{font-size: 3rem;}
+h3{font-size: 2rem;}
+
+
+/*Pàrrafos*/
+p{
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+a{
+    color: var(--fondo);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    justify-content: space-between;
+}
+
+header{
+    background-color: var(--marca);
+    color: var(--fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav a{
+    display:flex;
+    text-align:center;
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 1.6px;
+    height: 2rem;
+}
+
+
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+caption{
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+th,td{
+    padding: 1.2rem;
+    border-bottom: .1rem solid #DDD;
+}
+
+thead th{
+    background: var(--marca);
+    color:#FFF;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+tbody tr:nch-child(even){
+    background: #F5F7FA;
+}
+
+tbody tr:hover{
+    background: #E3EEF9;
+}
+
+tfoot td{
+    background: #F5F7FA;
+    font-style: italic;
+    border-top: .2rem solid var(--marca);
+}
+
+fieldset{
+    border: .1rem solid #DDD;
+    border-radius: .6rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: #FFF;
+}
+
+legend{
+    padding: 0.8rem;
+    font-weight: 700;
+    color: var(--marca);
+}
+
+label{
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+input[type="texto"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,textarea{
+    width: 100%;
+    padding: 1rem 1.4rem;
+    border: .1rem;
+    font-size:1.6rem;
+    font-family:inherit;
+}
+
+input:focus,select:focus,textarea:focus{
+    outline:none;
+    border-color: var(--acento);
+    box-shadow: 0 0 0 .3rem rgba(197, 90, 17, .10);
+}
+
+.boton{
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: .6rem;
+    font-family: inheri;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--acento);
+    color: #FFF;
+    transition: background-color .25s ease transform .25s ease;
+}
+
+.boton:hover{background: #A8490E; 
+    transform:translateY(-2rem);
+}
+
+.boton:active{transform: translateY(0);}
+
+.boton:focus{
+    outline: .2rem solid var(--marca);
+    outline-offset: .2rem;
+}
+
+    
+footer{
+    background-color: #1F4E79;
+    color: var(--fondo);
+    display: block;
+    grid-row: auto;
+    font-size: var(--esp-md);
+    line-height: 1.6;
+   
+}
+
+
+/*clases-index*/
+.identidad{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-left: 1rem;
+
+  
+    
+}
+.frase
+.navegacion{
+   
+}
+.pagina-actual
+.destacado{
+    
+    display: block; 
+    padding-top: 4rem;
+    
+.destacado a{
+    display: block;
+    background-color: var(--fondo);
+    text-align: center;
+    color: var(--tinta);
+}
+
+
+}
+.destacado.texto
+.accion .accion-primaria a{
+  text-align: center;
+}
+
+
+.bloques-servicio{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+background-color: var(--linea);
+border-radius: var(--radio);
+box-shadow: var(--sombra);
+border: .1rem solid #DDD;
+
+}
+.bloque
+.bloque-nota
+.bloque
+.testimonio{
+
+    background-color: #FAFAF8;
+    border: 1px solid var(--marca);
+}
+.testimonio-autoria{
+    background-color: var(--fondo);
+    color: var(--tinta);
+}
+.recuadro-nota
+.contenido-pie
+.direccion{
+   
+    
+}
+.derechos
+
+/*Ids-index*/
+#cabecera{
+ 
+}
+#principal
+#bienvenida{
+    display: block;
+    padding-top: 4rem;
+    margin-top: 4rem;
+    background-color: var(--suave);
+    color: var(--tinta);
+    width: 100%;
+    height: 20rem;
+
+   
+    
+}
+#servicios
+#origen h1{
+color: var(--tinta);
+}
+#nota
+#pie{
+    
+}
+/*clases-plantas*/
+.sumario
+.tabla-especies
+.lista-grupos
+.terminos
+.formulario-encargo
+.seccion-campos
+.linea-campo
+.seccion-opciones
+.opcion-radio.accion
+.fila-acciones
+.regresar
+
+/*Ids-plantas*/
+#disponibles {
+    color: var(--tinta);
+}
+#grupos
+#encargo
+#acepto{}
