@@ -177,7 +177,7 @@ img {
 /* ─── PORTADA ────────────────────────────────────────────────────────── */
 .portada {
   background-color: var(--verde);
-  background-image: url('../recursos/portada.jpg');
+  background-image: url('../recursos/Portada.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
