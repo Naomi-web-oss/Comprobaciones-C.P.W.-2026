@@ -607,3 +607,94 @@ img {
   opacity: 0.72;
   margin-bottom: 0;
 }
+
+/*Base*/
+
+
+/*Cabecera*/
+.galeria{display: block;}
+
+@media(min-width:768px){
+.galeria{display: grid;
+grid-template-columns: 1fr 1fr;}
+}
+
+@media(min-width:1014px){
+  .galeria{grid-template-columns: 1fr 1fr 1fr;}
+}
+
+/*Menù responsivo*/
+  @media (min-width:768px){
+  nav a{display:block;
+  }
+
+  .menu-enlace{display:none}
+
+  nav ul{
+    display:flex;
+
+  .menu-enlace:checked ~ nav ul{
+    display: block;
+  }
+  }
+  }
+
+  /*Tarjetas-Flexbox (Column Drop)*/
+
+.zonas{display:flex;
+      flex-wrap: wrap;
+      gap: 160px;
+}
+
+.zonas > * {flex: 1 1 100%}
+
+@media(min-width:600px){
+  .lateral,.complemento{
+    flex: 1 1 calc(50%-8px)
+  }
+}
+
+@media(min-width:1024px){
+  .zonas > * {
+    flex:1;
+  }
+}
+
+/*Tabla*/
+.tabla-envoltorio{
+  overflow-x: auto;
+}
+
+@media(min-width:768px){
+  .tabla th,
+  .tabla dd{
+    padding:86px;
+    font-size:1.4rem
+  }
+}
+
+/*Galerìa-Grid (Mostly Fluid)*/
+.contenedor{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+
+/*Tiny Tweaks*/
+.articulo{ 
+max-width: 70ch;
+margin:0 auto;
+padding:0.16px;}
+
+@media(min-width:768px){
+  .articulo{
+    font-size: 1.1rem;
+  }
+}
