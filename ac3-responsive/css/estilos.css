@@ -100,7 +100,9 @@ img {
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 
 .seccion {
-  width: 1180px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
   padding: 90px 30px;
@@ -141,6 +143,18 @@ img {
 .pagina-titulo   { margin-bottom: 10px; }
 .pagina-bajada   { color: var(--suave); font-size: 19px; }
 .subtitulo       { margin-top: 28px; margin-bottom: 10px; }
+
+@media (min-width:768px){
+  .seccion{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width:1024px){
+  .seccion{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
 
 
 /* ─── CABECERA ───────────────────────────────────────────────────────── */
@@ -210,6 +224,17 @@ img {
 
 .menu-enlace.activo { color: var(--terracota); }
 
+@media(min-width:768px){
+  nav ul{
+    display: flex;
+    gap: 8px;
+  }
+  .menu-enlace{
+    display: flex;
+  }
+}
+
+
 
 /* ─── PORTADA ────────────────────────────────────────────────────────── */
 .portada {
@@ -267,9 +292,11 @@ img {
 
 /* ─── TARJETAS · Flexbox ─────────────────────────────────────────────── */
 .fila-propuestas {
-  display: flex;
-  gap: 26px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
+
 
 .tarjeta {
   width: 360px;
@@ -282,6 +309,7 @@ img {
   flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 
 .tarjeta:hover {
   transform: translateY(-5px);
@@ -299,6 +327,24 @@ img {
   margin-bottom: 0;
   padding-top: 14px;
   border-top: 1px solid var(--linea);
+}
+
+@media(min-width:768px){
+  .fila-propuestas{
+    display: flex;
+  }
+}
+
+@media(min-width:768px){
+  .fila-propuestas{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+@media(min-width:1024px){
+  .fila-propuestas{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 
@@ -486,6 +532,7 @@ font-size: 2.0rem;
   text-align: center;
   font-style: italic;
 }
+
 
 
 /* ─── LISTAS ─────────────────────────────────────────────────────────── */
